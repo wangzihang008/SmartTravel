@@ -1,7 +1,7 @@
 <?php
-$servername = "localhost";
-$username = "username";
-$password = "password";
+$servername = "192.168.64.2";
+$username = "Smart2-Travel0-Db18";
+$password = "Smart2-Travel0-Db18";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
@@ -10,4 +10,4 @@ $conn = new mysqli($servername, $username, $password);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-echo "Connected successfully";
+//echo "Connected successfully";
