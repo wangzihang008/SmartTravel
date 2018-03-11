@@ -7,12 +7,24 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
-        <?php include 'http://192.168.64.2/SmartTravel/database/connection.php';?>
+        <title>SmartTravel - Your DIV Travel Helper</title>
+        <style>
+            <?php include 'lib/css/bootstrap-grid.css';?>
+            <?php include 'lib/css/bootstrap.css';?>
+            <?php include 'lib/css/bootstrap.min.css';?>
+            <?php include 'lib/css/bootstrap-grid.min.css';?>
+        </style>
+        <script>
+            <?php include 'lib/js/bootstrap.js';?>
+            <?php include 'lib/js/bootstrap.min.js';?>
+        </script>
     </head>
     <body>
         <?php
         // put your code here
         ?>
+        <div class="header"></div>
+        <div class="main"></div>
+        <div class="footer"></div>
     </body>
 </html>
