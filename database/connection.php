@@ -1,5 +1,5 @@
 <?php
-$servername = "192.168.64.2";
+$servername = "localhost";
 $username = "Smart2-Travel0-Db18";
 $password = "Smart2-Travel0-Db18";
 

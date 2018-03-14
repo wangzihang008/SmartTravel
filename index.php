@@ -8,7 +8,7 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title></title>
-        <?php include 'http://192.168.64.2/SmartTravel/database/connection.php';?>
+        <?php include 'http://localhost/SmartTravel/database/connection.php';?>
     </head>
     <body>
         <?php
