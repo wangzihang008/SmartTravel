@@ -22,7 +22,7 @@ class Cache{
     protected $_get;
     protected $_post;
     
-    function __construct(
+    protected function __construct(
         Session $session,
         Cookie $cookie,
         Get $get,
@@ -36,43 +36,43 @@ class Cache{
             $this->_request = $request;
     }
     
-    function getSession(){
+    public function getSession(){
         $this->_session->getSession();
     }
     
-    function setSession($attr, $value){
+    public function setSession($attr, $value){
         $this->_session->setSession($attr, $value);
     }
     
-    function getCookie(){
+    public function getCookie(){
         $this->_cookie->getCookie();
     }
     
-    function setCookie($attr, $value){
+    public function setCookie($attr, $value){
         $this->_cookie->setCookie($attr, $value);
     }
     
-    function getRequest(){
+    public function getRequest(){
         $this->_request->getRequest();
     }
     
-    function setRequest($attr, $value){
+    public function setRequest($attr, $value){
         $this->_request->setRequest($attr, $value);
     }
     
-    function getPost(){
+    public function getPost(){
         $this->_post->getPost();
     }
     
-    function setPost($attr, $value){
+    public function setPost($attr, $value){
         $this->_post->setPost($attr, $value);
     }
     
-    function getGet(){
+    public function getGet(){
         $this->_get->getGet();
     }
     
-    function setGet($attr, $value){
+    public function setGet($attr, $value){
         $this->_get->setGet($attr, $value);
     }
     

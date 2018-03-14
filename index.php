@@ -14,17 +14,21 @@ and open the template in the editor.
             <?php include 'lib/css/bootstrap.min.css';?>
             <?php include 'lib/css/bootstrap-grid.min.css';?>
         </style>
-        <script>
-            <?php include 'lib/js/bootstrap.js';?>
-            <?php include 'lib/js/bootstrap.min.js';?>
-        </script>
+        
     </head>
     <body>
         <?php
         // put your code here
         ?>
-        <div class="header"></div>
-        <div class="main"></div>
+        <div class="header">
+            <?php include 'header/HeaderLinks.php';?>
+        </div>
+        <div class="main" id="main"></div>
         <div class="footer"></div>
+        <script>
+            <?php include 'lib/js/bootstrap.js';?>
+            <?php include 'lib/js/bootstrap.min.js';?>
+        </script>
     </body>
+    
 </html>

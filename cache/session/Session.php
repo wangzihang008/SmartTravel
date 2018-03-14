@@ -12,16 +12,16 @@ class Session{
     
     protected $_session;
             
-    function __construct() {
+    protected function __construct() {
         $this->_session = $_SESSION;
         session_start();
     }
     
-    function getSession(){
+    public function getSession(){
         return $this->_session;
     }
     
-    function setSession($attr, $value){
+    public function setSession($attr, $value){
         $this->_session[$attr] = $value;
     }
 }

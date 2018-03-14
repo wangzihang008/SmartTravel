@@ -12,15 +12,15 @@ class Request{
     
     protected $_request;
     
-    function __construct() {
+    protected function __construct() {
         $this->_request = $_REQUEST;
     }
     
-    function getRequest(){
+    public function getRequest(){
         return $this->_request;
     }
     
-    function setRequest($attr, $value){
+    public function setRequest($attr, $value){
         $this->_request[$attr] = $value;
     }
 }

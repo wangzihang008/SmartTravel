@@ -12,15 +12,15 @@ class Post{
     
     protected $_post;
     
-    function __construct() {
+    protected function __construct() {
         $this->_post = $_POST;
     }
     
-    function getPost(){
+    public function getPost(){
         return $this->_post;
     }
     
-    function setPost($attr, $value){
+    public function setPost($attr, $value){
         $this->_post[$attr] = $value;
     }
 }

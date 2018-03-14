@@ -15,7 +15,7 @@ class Connection{
     }
 
     function connect(){
-        $conn = new mysqli($servername, $username, $password);
+        $conn = new mysqli($this->servername, $this->username, $this->password);
 
         // Check connection
         if ($conn->connect_error) {

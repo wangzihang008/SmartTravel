@@ -12,15 +12,15 @@ class Get{
     
     protected $_get;
     
-    function __construct() {
+    protected function __construct() {
         $this->_get = $_GET;
     }
     
-    function getGet(){
+    public function getGet(){
         return $this->_get;
     }
     
-    function setGet($attr, $value){
+    public function setGet($attr, $value){
         $this->_Get[$attr] = $value;
     }
 }

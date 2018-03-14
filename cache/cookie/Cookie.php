@@ -12,15 +12,15 @@ class Cookie{
     
     protected $_cookie;
     
-    function __construct() {
+    protected function __construct() {
         $this->_cookie = $_COOKIE;
     }
     
-    function getCookie(){
+    public function getCookie(){
         return $this->_cookie;
     }
     
-    function setCookie($attr, $value){
+    public function setCookie($attr, $value){
         $this->_cookie[$attr] = $value;
     }
     
